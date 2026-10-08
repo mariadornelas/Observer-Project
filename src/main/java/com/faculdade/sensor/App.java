@@ -1,9 +1,5 @@
 package com.faculdade.sensor;
 
-/**
- * Cliente de demonstração. Registra três observadores em um sensor, mede
- * alguns valores e depois remove um observador em tempo de execução.
- */
 public class App {
 
     public static void main(String[] args) {

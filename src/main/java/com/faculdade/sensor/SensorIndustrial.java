@@ -4,19 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Subject (Concrete Subject) do padrão Observer.
- *
- * <p>Mantém a lista de observadores interessados e, a cada
- * {@link #medir(double)}, notifica todos eles, na ordem em que foram
- * registrados. O sensor não sabe quantos observadores existem nem o que
- * cada um faz com a leitura.</p>
- *
- * <p>A notificação percorre uma <b>cópia</b> da lista, então um observador
- * pode se remover (ou registrar outro) durante a própria notificação sem
- * causar {@code ConcurrentModificationException}. Nesse caso, a mudança
- * vale a partir da próxima medição.</p>
- */
 public class SensorIndustrial {
 
     private final String tipo;

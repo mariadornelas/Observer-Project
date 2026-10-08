@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Concrete Observer 2: guarda toda leitura recebida, em ordem, para consulta posterior. */
 public class RegistroHistorico implements ObservadorSensor {
 
     private final List<LeituraSensor> leituras = new ArrayList<>();

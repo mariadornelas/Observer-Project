@@ -7,7 +7,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/** O Subject: classificação, gerência da lista de observadores e regras de notificação. */
 class SensorIndustrialTest {
 
     private final SensorIndustrial sensor = new SensorIndustrial("TEMPERATURA", 70.0, 90.0);

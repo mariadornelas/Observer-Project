@@ -7,10 +7,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * O que caracteriza o Observer: o sensor e seus observadores ficam
- * desacoplados, e a lista de interessados pode mudar em tempo de execução.
- */
 class SensorObserverIntegracaoTest {
 
     @Test

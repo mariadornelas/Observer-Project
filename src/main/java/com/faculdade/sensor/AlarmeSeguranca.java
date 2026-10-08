@@ -4,11 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Concrete Observer 3: recebe todas as leituras, mas só reage às que não
- * estão NORMAL. Mostra que cada observador decide sozinho o que fazer com
- * a notificação; o sensor não filtra nada por ele.
- */
 public class AlarmeSeguranca implements ObservadorSensor {
 
     private final List<String> alarmesDisparados = new ArrayList<>();

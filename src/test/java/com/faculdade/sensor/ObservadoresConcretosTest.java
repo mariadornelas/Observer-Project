@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/** Cada observador concreto decide, sozinho, o que fazer com a mesma notificação. */
 class ObservadoresConcretosTest {
 
     private final LeituraSensor normal = new LeituraSensor("TEMPERATURA", 50.0, "NORMAL");
@@ -39,8 +38,6 @@ class ObservadoresConcretosTest {
         assertTrue(painel.getUltimaExibicao().contains("CRITICO"));
     }
 
-    // ---- RegistroHistorico: guarda tudo, em ordem ----
-
     @Test
     void historicoDeveGuardarTodasAsLeiturasEmOrdem() {
         RegistroHistorico historico = new RegistroHistorico();
@@ -59,8 +56,6 @@ class ObservadoresConcretosTest {
 
         assertThrows(UnsupportedOperationException.class, () -> historico.getLeituras().add(alerta));
     }
-
-    // ---- AlarmeSeguranca: só reage ao que não é NORMAL ----
 
     @Test
     void alarmeNaoDeveDispararParaLeituraNormal() {
